@@ -79,4 +79,5 @@ In this example, the loop represents a time-consuming synchronous operation. Dur
    - Starvation occurs when a task in the callback queue is never given the chance to execute because the call stack is consistently busy. This can impact the responsiveness of an application.
 
 Asynchronous programming, combined with the Web API, callback queue, microtask queue, and the event loop, is essential for creating responsive and efficient web applications. Understanding these concepts helps in managing the flow of asynchronous operations and preventing potential issues like starvation.
+
 ![image](https://github.com/hash-define-organization/Babu-JS/assets/66466976/d8f6d941-b80c-4930-a3a0-7edb751b128e)
