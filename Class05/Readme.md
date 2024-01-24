@@ -7,6 +7,27 @@ JavaScript is a single-threaded, asynchronous language that executes one operati
 
 ### Using `setTimeout`:
 
+The `setTimeout` function in JavaScript is used to schedule the execution of a function or the evaluation of an expression after a specified delay. The basic syntax is as follows:
+
+```javascript
+setTimeout(function, delay);
+```
+
+- **function**: The function to be executed after the delay.
+- **delay**: The time (in milliseconds) to wait before executing the function.
+
+For example, consider the following code:
+
+```javascript
+function greet() {
+  console.log("Hello, world!");
+}
+
+setTimeout(greet, 2000); // Executes greet() after a 2000-millisecond (2-second) delay
+```
+
+In this example, the `greet` function will be called after a 2-second delay. `setTimeout` is commonly used for tasks like animations, asynchronous operations, or any situation where a delayed execution is required.
+
 ```javascript
 // Example 1: setTimeout for a single delayed function
 setTimeout(function() {
@@ -25,6 +46,28 @@ delayedIncrement();
 ```
 
 ### Using `setInterval`:
+
+The `setInterval` function is similar to `setTimeout` but repeatedly calls a function or evaluates an expression at specified intervals. The syntax is as follows:
+
+```javascript
+setInterval(function, interval);
+```
+
+- **function**: The function to be executed at each interval.
+- **interval**: The time (in milliseconds) between each execution of the function.
+
+Here's an example:
+
+```javascript
+function printTime() {
+  console.log(new Date());
+}
+
+setInterval(printTime, 1000); // Prints the current time every second
+```
+
+In this case, the `printTime` function will be called every 1000 milliseconds (1 second). `setInterval` is commonly used for tasks that need to be repeated at regular intervals, such as updating real-time data, fetching new information from a server, or creating animations that continuously change over time.
+
 
 ```javascript
 // Example: setInterval for a repeated function at fixed intervals
